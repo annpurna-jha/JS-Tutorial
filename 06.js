@@ -1,3 +1,4 @@
+// typeof
 let sName ;
 console.log(typeof sName);//undefined type
 sName = "jha";

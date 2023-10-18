@@ -21,3 +21,9 @@ let name2 = "sambhavi";
 // let newStr = name2.slice(0,3);//sam
 let newStr = name2.slice(1);//1 to end ambhavi
 console.log(newStr);
+
+let name3 = "Harry";
+let newName = name3.replace("Har","per");
+// let newName = name3.replace("har","per");// as har (case sensitive) is not present it will not change anything 
+console.log(newName)
+;

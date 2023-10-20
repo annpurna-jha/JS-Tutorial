@@ -20,3 +20,8 @@ console.log(typeof mixed);
 // for finding that it is really an array
 console.log(Array.isArray(mixed));// true
 
+// Array.from used to create array from object , strings , html collection etc
+let sName = "Harry";
+let arr = Array.from(sName);
+console.log(arr);
+

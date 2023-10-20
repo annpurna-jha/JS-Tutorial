@@ -7,6 +7,7 @@ const numbers = [3,4,6,1,8];
 // };
 // const squareNumber = numbers.map(square);
 
+// or can do like this
 const squareNumber = numbers.map(number =>{
     return number * number;
 });

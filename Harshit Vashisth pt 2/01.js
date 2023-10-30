@@ -1,4 +1,4 @@
-// how js works overview
+// how js works in case of function declaration and var
 
 
 // JavaScript is a synchronous (Moves to the next line only when the execution of the current line is completed) and single-threaded (Executes one command at a time in a specific order one after another serially) language.

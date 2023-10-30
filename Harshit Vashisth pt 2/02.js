@@ -1,4 +1,4 @@
-// how js works overview
+// how js works in case of function expression
 
 console.log(myFunc);//in case of funtion expression created using var (it will treated as variable) stores undefined 
 // where in case of function it stores whole definition of function alread see in file 01.js

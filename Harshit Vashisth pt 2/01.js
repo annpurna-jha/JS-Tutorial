@@ -36,6 +36,7 @@ console.log(myFunc);//it will print function as it is bcz function created using
 console.log(fullName);//determine scope check fullName is present in global scope so here it will print undefined as first var stores undefined
 
 // created function using function delaration
+myFunc();
 function myFunc (){
     console.log("This is my function");
 }

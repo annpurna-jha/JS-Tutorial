@@ -22,3 +22,4 @@ console.log(sName);
 // TDZ(Temporal Dead Zone) -> Variables exist but cannot be accessed until their declaration. Accessing variables in the TDZ results in a ReferenceError.
 // or
 // The Temporal Dead Zone is the period between the creation of a variable (due to hoisting) and its actual declaration in the code
+

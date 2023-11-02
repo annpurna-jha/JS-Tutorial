@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css" />
+ <!-- <script src="./exe.js"></script>  -->  <!-- parsing of the page is blocked and the script is downloaded and executed immediately as soon as the compiler encounters a <script> tag. -->
+    
+    <!-- <script src="./exe.js" async></script>  -->  <!--async allows downloading the script file in parallel to the parsing of the html page and starts its execution of the script as soon as the download is completed. Once the download of the script file is completed it interrupts the parsing of the rest of the page till the execution of the script file is completed. 
+    . async attribute only used with external js file-->
+
+     <!-- <script src="./exe.js" defer></script>  -->  <!--This attribute is used to improve the performance and loading time of the websites by delaying the execution of code inside the <script>...</script> tag till the time the content is displayed on the browser. In simple words, it allows downloading the script file in parallel to the parsing of the page but starts the execution only once the parsing of the page is completely finished.
+    .  defer attribute only used with external js file 
+    .  we can also use in body section bt performance is here much better -->
+
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+          <h1 class="logo">Website</h1>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="">Todo</a></li>
+            <li class="nav-item"><a href="">Sign Up</a></li>
+          </ul>
+        </nav>
+        <div class="headline">
+          <h2 id="main-heading">
+            Manage your tasks <span style="display: none">Hello</span>
+          </h2>
+          <button class="btn btn-headline">Learn More</button>
+        </div>
+      </header>
+  
+      <section class="section-todo container">
+        <h2>Your plan for today ?</h2>
+        <!-- todo form  -->
+        <form class="form-todo">
+          <input type="text" name="" id="" placeholder="Add Todo" />
+          <input type="submit" value="Add Todo" class="btn" />
+        </form>
+  
+        <ul class="todo-list">
+          <li>
+            <span class="text">Do this do that</span>
+            <div class="todo-buttons">
+              <button class="todo-btn done">Done</button>
+              <button class="todo-btn remove">Remove</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="about">About Yourself</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+      </section>
+</body>
+</html>

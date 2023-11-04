@@ -8,7 +8,7 @@ body.addEventListener("keypress",(e)=>{
 // mouseover event
 const mainBtn = document.querySelector(".btn-headline");
 mainBtn.addEventListener("mouseover",()=>{
-    console.log("MouseOver event occured!!");//when mouse goes on that button
+    console.log("Mouseover event occured!!");//when mouse goes on that button
 });
 mainBtn.addEventListener("mouseleave",()=>{
     console.log("Mouseleave event occured!!");//when mouse remove from that button

@@ -13,13 +13,26 @@ const friedRicePromise = new Promise((resolve,reject)=>{
 
 // consume
 // how to consume
+
+// friedRicePromise.then(
+//     //when promise resolve
+//     (myFriedRice)=>{
+//         console.log("Lets eat",myFriedRice);//here in myFriedRice paas the Fried rice written in above line inside resolve
+//     },
+//     //when promise reject , it is optional you cand add or not depends upon you
+//     (error) =>{
+//         console.log(error);//here in error paas the Couldn't do it written in above line inside reject
+//     }
+// )
+
+// don't need to paas two different callback function  myFriedRice and error
+// we can do like this
+
 friedRicePromise.then(
-    //when promise resolve
-    (myFriedRice)=>{
-        console.log("Lets eat",myFriedRice);//here in myFriedRice paas the Fried rice written in above line inside resolve
-    },
-    //when promise reject , it is optional you cand add or not depends upon you
-    (error) =>{
-        console.log(error);//here in error paas the Couldn't do it written in above line inside reject
-    }
-)
+        //when promise resolve
+        (myFriedRice)=>{
+            console.log("Lets eat",myFriedRice);//here in myFriedRice paas the Fried rice written in above line inside resolve
+        },
+).catch(
+    (error) =>{console.log(error);}
+ )
